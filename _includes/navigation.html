@@ -1,0 +1,35 @@
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">{{site.title}}</span>
+    <span class="d-none d-lg-block">
+      {% if site.profile_picture %}
+        {%- if site.profile_picture.size > 4 -%}
+        <img class = "img-fluid img-profile rounded-circle mx-auto mb-2" alt="profile picture"
+          src="/assets/img/{{site.profile_picture}}" />
+        {%- else -%}
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" alt="profile picture"
+          src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" />
+        {% endif %}
+      {% else %}
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" alt="profile picture"
+        src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" />
+      {% endif %}
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav">
+      {%- for section in site.sections -%}
+        {%- if section.enabled -%}
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#{{ section.name | downcase }}">{{section.name | capitalize }}</a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+</nav>

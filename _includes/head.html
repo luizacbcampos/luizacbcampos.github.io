@@ -1,0 +1,29 @@
+<head>
+    <!-- Metadata, OpenGraph and Schema.org -->
+    {% include metadata.html %}
+
+    <title>{{ site.title }}</title>
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <!-- DevIcons icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!--  https://jpswalsh.github.io/academicons/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Mulish:400,400i,800,800i" rel="stylesheet" type="text/css" />
+
+    <!-- Styles -->
+    {% if site.site_icon %}
+        {% if site.site_icon.size > 4 %}
+            <link rel="icon" href= "{{ '/assets/img/' | append: site.site_icon }}">
+        {% endif %}
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+</head>

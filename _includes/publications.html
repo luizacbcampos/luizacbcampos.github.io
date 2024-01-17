@@ -1,0 +1,41 @@
+<div class="resume-section-content">
+    <h2 class="mb-5">Publications</h2>
+    {% comment %}
+        Workaround to sort publications using default=0
+    {% endcomment %}
+    
+    {% assign default_importance = 0 %}
+    {% assign publications_with_default_importance = "" | split: "" %}
+
+    {% for publication in site.publications %}
+    {% assign importance = publication.importance | default: default_importance %}
+    {% assign publication_with_default_importance = publication | merge: 'importance' => importance %}
+    {% assign publications_with_default_importance = publications_with_default_importance | push:
+    publication_with_default_importance %}
+    {% endfor %}
+
+    {% assign sorted_publications = publications_with_default_importance | sort: 'importance' %}
+
+    {% for publication in sorted_publications %}
+    {% comment %}
+        Code to display the publication goes here
+    {% endcomment %}
+
+    {% if publication.show %}
+    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+            <h5 class="mb-1"> {{ publication.title | capitalize }}</h5>
+            <div class="pub-subheading mb-1">{{ publication.author | capitalize }}</div>
+            <div class="pub-subheading mb-1"> {{ publication.place | capitalize }}</div>
+            <h6 class="mb-6">
+                <a href="{{ publication.information.link }}" target="_blank">PAPER</a> &ensp;
+                <a href="{{ publication.information.code }}" target="_blank">CODE</a>
+            </h6>
+        </div>
+        <div class="flex-shrink-0">
+            <span class="text-primary">{{ publication.information.date }}</span>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>

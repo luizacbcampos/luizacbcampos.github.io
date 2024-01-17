@@ -1,0 +1,12 @@
+<div class="container-fluid p-0">
+    {% for section in site.sections %}
+        {%- if section.enabled -%}
+        
+        <section class="resume-section" id="{{section.name | downcase}}">
+            {% include {{section.name | downcase}}.html %}
+        </section>
+        <hr class="m-0" />
+        
+        {%- endif -%}
+    {% endfor %}
+</div>

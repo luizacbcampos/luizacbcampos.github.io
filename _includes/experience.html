@@ -1,0 +1,34 @@
+<div class="resume-section-content">
+    <h2 class="mb-5">Experience</h2>
+    
+    {% assign default_date_end = '9999-12-31' %}
+    {% assign experiences_with_sortable_date_end = "" | split: "" %}
+
+    {% for exp in site.experience %}
+        {% assign sortable_date_end = exp.date_end | default: default_date_end %}
+        {% assign exp_with_sortable_date_end = exp | merge: 'sortable_date_end' => sortable_date_end %}
+        {% assign experiences_with_sortable_date_end = experiences_with_sortable_date_end | push: exp_with_sortable_date_end %}
+    {% endfor %}
+        
+    {% assign experiences_with_sortable_date_end = experiences_with_sortable_date_end | sort: 'sortable_date_end'%}
+
+    {%- for exp in experiences_with_sortable_date_end %}
+    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+            <h3 class="mb-0">{{exp.role}}</h3>
+            <div class="subheading mb-3"> {{ exp.company }} </div>
+            <div> {{ exp.information.text }}</div>
+        </div>
+        <div class="flex-shrink-0">
+            <span class="text-primary">
+                {{ exp.date_start | date: "%B %Y" }}&nbsp;-&nbsp;
+                {%- if exp.date_end -%}
+                    {{exp.date_end | date: "%B %Y"}}
+                {%- else -%}
+                    Present
+                {%- endif -%}
+            </span>
+        </div>
+    </div>
+    {%- endfor -%}
+</div>

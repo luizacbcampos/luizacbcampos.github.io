@@ -1,0 +1,26 @@
+<div class="resume-section-content">
+    <h2 class="mb-5">Education</h2>
+    {% for edu in site.education %}
+    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+            <h3 class="mb-0">{{ edu.degree}}</h3>
+            <div class="subheading mb-3">{{ edu.school }}</div>
+            <div> {{ edu.information.text }}</div>
+            {% if edu.information.GPA %}
+            <p class="mb-3">GPA: {{ edu.information.GPA }}</p>
+            {% endif %}
+        </div>
+        <div class="flex-shrink-0">
+            <span class="text-primary">
+                {{edu.date_start}}&nbsp;-&nbsp;
+                {%- if edu.date_end -%}
+                    {{edu.date_end}}
+                {%- else -%}
+                    Present
+                {%- endif -%}
+            </span>
+        </div>
+    </div>
+    {% endfor %}
+
+</div>

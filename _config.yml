@@ -1,0 +1,208 @@
+# -----------------------------------------------------------------------------
+# Basic settings
+# -----------------------------------------------------------------------------
+
+title: Luiza Campos
+first_name: Luiza
+last_name: Campos
+email: luizabcampos@gmail.com
+
+lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+site_icon: favicon.ico # the favicon (alternatively, provide ico name in /assets/img/)
+url: https://luizacbcampos.github.io/ # the base hostname & protocol for your site
+
+
+# -----------------------------------------------------------------------------
+# About yourself
+# -----------------------------------------------------------------------------
+
+profile_picture: profile.jpg # your profile picture (put the image in /assets/img/ folder)
+about_txt: MS student in Computer Science. Currently working with activity recognition and sports analytics.
+location: Belo Horizonte, Brazil
+cv: CV-LuizaCampos.pdf # your CV (put the pdf in /assets/pdf/ folder)
+
+# -----------------------------------------------------------------------------
+# Social media
+# -----------------------------------------------------------------------------
+
+github_username: luizacbcampos # your GitHub user name
+linkedin_username: luiza-chagas-brandão-campos # your LinkedIn user name
+scholar_userid: _SwVdxsAAAAJ # your Google Scholar ID
+telegram_username: # your Telegram user name
+whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+twitter_username: luizacbcampos # your Twitter handle
+spotify_id: luizachagas # your spotify id
+lattes_id: 1303823380054880 # your ID on Lattes (Brazilian Lattes CV)
+discord_id: 502230661608898562 # your discord id (18-digit unique numerical identifier)
+instagram_id: # your instagram id
+facebook_id: # your facebook id
+youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
+mastodon_username: # your mastodon instance+username in the format instance.tld/@username
+semanticscholar_id: # your Semantic Scholar ID
+orcid_id: # your ORCID ID
+medium_username: # your Medium username
+quora_username: # your Quora username
+publons_id: # your ID on Publons
+osf_id: # your OSF ID
+research_gate_profile: # your profile on ResearchGate
+scopus_id: # your profile on Scopus
+blogger_url: # your blogger URL
+wikidata_id: # your wikidata id
+wikipedia_id: # your wikipedia id (Case sensitive)
+strava_userid: # your strava user id
+dblp_url: # your DBLP profile url
+stackoverflow_id: # your stackoverflow id
+kaggle_id: # your kaggle id
+lastfm_id: # your lastfm id
+pinterest_id: # your pinterest id
+unsplash_id: # your unsplash id
+
+
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
+
+sections: # the sections to show in the navigation bar
+  - name: About
+    enabled: true
+  - name: Education
+    enabled: true
+  - name: Experience
+    enabled: true
+  - name: Publications
+    enabled: true
+  - name: Skills
+    enabled: true
+  - name: Interests
+    enabled: true
+
+
+# -----------------------------------------------------------------------------
+# Education
+# -----------------------------------------------------------------------------
+# Add your education history here
+
+education:
+  - degree: Master of Computer Science
+    school: Universidade Federal de Minas Gerais
+    date_start: October 2021
+    date_end: # leave blank if still studying
+    information: 
+      text: # additional information (e.g. honours, etc.)
+      GPA: # your GPA
+
+  - degree: Bachelor of Computer Science
+    school: Universidade Federal de Minas Gerais
+    date_start: March 2017
+    date_end: September 2021
+    information: 
+      text: # additional information (e.g. honours, etc.)
+      GPA: # your GPA
+
+  - degree: High School
+    school: Instituto Educacional Imaculada
+    date_start: January 2014
+    date_end: December 2016
+    information: 
+      text: # additional information (e.g. honours, etc.)
+      GPA: # your GPA
+
+  - degree: Yale Young Global Scholars
+    school: Yale University
+    date_start: July 2016
+    date_end: August 2016
+    information: 
+      text: Summer course on Technological Innovation and Entrepreneurship.
+      GPA: # your GPA
+
+# -----------------------------------------------------------------------------
+# Experience
+# -----------------------------------------------------------------------------
+# Add your work experience here
+
+experience:
+  - role: Research Assistant
+    company: Verlab - UFMG
+    date_start: !!timestamp 2021-08-01 #August 2021
+    date_end: # leave blank if still working
+    information: 
+      text: # additional information (e.g. honours, etc.)
+  - role: Research Assistant
+    company: Sports Analytics Lab - UFMG
+    date_start: !!timestamp 2022-10-01 #October 2022
+    date_end: 
+    information: 
+      text: # additional information (e.g. honours, etc.)
+  - role: Software Engineer Intern
+    company: Google
+    date_start: !!timestamp 2023-08-01 # August 2023
+    date_end: !!timestamp 2023-11-17 # November 2023
+    information: 
+      text: # additional information (e.g. honours, etc.)
+  - role: Software Engineer
+    company: Cadence Design Systems
+    date_start: !!timestamp 2023-01-01 # January 2023
+    date_end: !!timestamp 2023-07-01 # July 2023
+    information: 
+      text: # additional information (e.g. honours, etc.)
+
+# -----------------------------------------------------------------------------
+# Publications
+# -----------------------------------------------------------------------------
+publications:
+ - title: An Action Recognition Approach with Context and Multiscale Motion Awareness
+   author: Danilo B. Cardoso, Luiza C. B. Campos, Erickson R. Nascimento
+   place: Conference on Graphics, Patterns and Images (SIBGRAPI 2022)
+   importance: 1 # importance of the publication. Default is 0. (e.g. 1, 2, 3, etc.)
+   show: true # Show this publication in the list
+   information: # additional information (e.g. DOI, etc.)
+    date: 2022
+    link: http://sibgrapi.sid.inpe.br/col/sid.inpe.br/sibgrapi/2022/09.20.00.55/doc/cardoso-38-inpe.pdf
+    code: https://github.com/verlab/AnActionRecognitionApproach_SIBGRAPI_2022
+ 
+ - title: # title of the publication
+   author: # (e.g. John Doe, Jane Doe, etc.)
+   place: # place of publication
+   importance: # importance of the publication. Default is 0. (e.g. 1, 2, 3, etc.)
+   show: false # Show this publication in the list
+   information: # additional information (e.g. DOI, etc.)
+    date: # date of publication (e.g. 2021)
+    link: # link to the publication (e.g. https://doi.org/10.1145/3460231.3474243)
+    code: # link to the code
+
+
+# -----------------------------------------------------------------------------
+# Skills
+# -----------------------------------------------------------------------------
+# If you want an icon to appear next to the skill, add the skill information in _data/skills.yml
+
+skills:
+  - category: Programming Languages & Tools
+  - list:
+    - python
+    - c
+    - cpp
+    - r
+    - bash
+    - html5
+    - css3
+    - jupyter
+    - docker
+    - markdown
+  - category: Design Tools
+  - list:
+    - photoshop
+    - gimp
+    - illustrator
+    - aftereffects
+
+
+# -----------------------------------------------------------------------------
+# Interests
+# -----------------------------------------------------------------------------
+
+# For a new paragraph, add a hyphen (-) at the beginning of the line
+interest_text:
+  - Apart from studying, I like watching television shows and [movies](https://letterboxd.com/luizachagas/){:target="_blank"}.
+  - I'm a novice skater, I mostly enjoy crusing on my Penny board.
+  - I'm also an entusiast football fan, I support [Atlético Mineiro](https://twitter.com/Atletico){:target="_blank"} and go to the stadium whenever I can. Futhermore, I watch a variety of matches from the Libertadores, Premier League and Champions League.

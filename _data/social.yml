@@ -1,0 +1,189 @@
+# -----------------------------------------------------------------------------
+# This file contains social media information for every platforrm.
+# -----------------------------------------------------------------------------
+
+linkedin:
+  title: 'LinkedIn'
+  href: 'https://www.linkedin.com/in/'
+  tag: linkedin_username
+  icon: 'fab fa-linkedin-in'
+
+scholar:
+  title: 'Google Scholar'
+  href: 'https://scholar.google.com.br/citations?user='
+  tag: scholar_userid
+  icon: 'ai ai-google-scholar-square'
+
+telegram:
+  title: 'Telegram'
+  href: 'https://telegram.me/'
+  tag: telegram_username
+  icon: 'fab fa-telegram-plane'
+
+whatsapp_number:
+  title: 'WhatsApp'
+  href: 'https://wa.me/'
+  tag: whatsapp_number
+  icon: 'fab fa-whatsapp'
+
+twitter:
+  title: 'Twitter'
+  href: 'https://twitter.com/'
+  tag: twitter_username
+  icon: 'fab fa-twitter'
+
+lattes:
+  title: 'Lattes'
+  href: 'http://lattes.cnpq.br/'
+  tag: lattes_id
+  icon: 'ai ai-lattes'
+
+github:
+  title: 'GitHub'
+  href: 'https://github.com/'
+  tag: github_username
+  icon: 'fab fa-github'
+
+discord:
+  title: 'Discord'
+  href: 'https://discord.com/users/'
+  tag: discord_id
+  icon: 'fab fa-discord'
+
+spotify:
+  title: 'Spotify'
+  href: 'https://open.spotify.com/user/'
+  tag: spotify_id
+  icon: 'fab fa-spotify'
+
+instagram:
+  title: 'Instagram'
+  href: 'https://instagram.com/'
+  tag: instagram_id
+  icon: 'fab fa-instagram'
+
+facebook:
+  title: 'Facebook'
+  href: 'https://facebook.com/'
+  tag: facebook_id
+  icon: 'fab fa-facebook'
+
+youtube:
+  title: 'YouTube'
+  href: 'https://youtube.com/@'
+  tag: youtube_id
+  icon: 'fab fa-youtube'
+
+mastodon:
+  title: 'Mastodon'
+  href: 'https://mastodon.social/@'
+  tag: mastodon_username
+  icon: 'fab fa-mastodon'
+
+semanticscholar:
+  title: 'Semantic Scholar'
+  href: 'https://www.semanticscholar.org/author/'
+  tag: semanticscholar_id
+  icon: 'ai ai-semantic-scholar'
+
+orcid:
+  title: 'ORCID'
+  href: 'https://orcid.org/'
+  tag: orcid_id
+  icon: 'ai ai-orcid'
+
+medium:
+  title: 'Medium'
+  href: 'https://medium.com/@'
+  tag: medium_username
+  icon: 'fab fa-medium'
+
+quora:
+  title: 'Quora'
+  href: 'https://www.quora.com/profile/'
+  tag: quora_username
+  icon: 'fab fa-quora'
+
+publons:
+  title: 'Publons'
+  href: 'https://publons.com/researcher/'
+  tag: publons_id
+  icon: 'ai ai-publons'
+
+osf:
+  title: 'Open Science'
+  Framework href: 'https://osf.io/'
+  tag: osf_id
+  icon: 'ai ai-osf'
+
+research_gate:
+  title: 'ResearchGate'
+  href: 'https://www.researchgate.net/profile/'
+  tag: research_gate_profile
+  icon: 'ai ai-researchgate'
+
+scopus:
+  title: 'Scopus'
+  href: 'https://www.scopus.com/authid/detail.uri?authorId='
+  tag: scopus_id
+  icon: 'ai ai-scopus'
+
+blogger:
+  title: 'Blogger'
+  href: ''
+  tag: blogger_url
+  icon: 'fab fa-blogger'
+
+wikidata:
+  title: 'Wikidata'
+  href: 'https://www.wikidata.org/wiki/'
+  tag: wikidata_id
+  icon: 'ai ai-wikidata'
+
+wikipedia:
+  title: 'Wikipedia'
+  href: 'https://en.wikipedia.org/wiki/User:'
+  tag: wikipedia_id
+  icon: 'fab fa-wikipedia-w'
+
+strava:
+  title: 'Strava'
+  href: 'https://www.strava.com/athletes/'
+  tag: strava_userid
+  icon: 'fab fa-strava'
+
+dblp:
+  title: 'DBLP'
+  href: ''
+  tag: dblp_url
+  icon: 'ai ai-dblp'
+
+stackoverflow:
+  title: 'StackOverflow'
+  href: 'https://stackoverflow.com/users/'
+  tag: stackoverflow_id
+  icon: 'fab fa-stack-overflow'
+
+kaggle:
+  title: 'Kaggle'
+  href: 'https://www.kaggle.com/'
+  tag: kaggle_id
+  icon: 'fab fa-kaggle'
+
+lastfm:
+  title: 'Last.fm'
+  href: 'https://www.last.fm/user/'
+  tag: lastfm_id
+  icon: 'fab fa-lastfm'
+
+pinterest:
+  title: 'Pinterest'
+  href: 'https://www.pinterest.com/'
+  tag: pinterest_id
+  icon: 'fab fa-pinterest'
+
+unsplash:
+  title: 'Unsplash'
+  href: 'https://unsplash.com/@'
+  tag: unsplash_id
+  icon: 'fab fa-unsplash'

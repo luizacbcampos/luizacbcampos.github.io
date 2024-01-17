@@ -1,0 +1,15 @@
+<div class="resume-section-content">
+    <h2 class="mb-5">Skills</h2>
+    {% for skill_category in site.skills %}
+        <div class="subheading mb-3">{{skill_category.category | capitalize }}</div>
+            <ul class="list-inline dev-icons">
+                {% for skill in skill_category.list %}
+                    {% if site.data.skills contains skill %}
+                        <li class="list-inline-item">
+                            <i title="{{site.data.skills[skill].title}}" class="{{site.data.skills[skill].icon}}"></i>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+    {% endfor %}
+</div>

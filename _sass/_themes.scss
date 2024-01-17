@@ -1,0 +1,53 @@
+/*******************************************************************************
+ * Themes
+ ******************************************************************************/
+
+:root {
+    --bs-gray: #{$bs-gray};
+    --bs-gray-dark: #{$bs-gray-dark};
+    --bs-white: #{$bs-white};
+    --bs-pink: #{$bs-pink};
+    --bs-black: #{$bs-black};
+    --bs-gray-100: #{$bs-gray-100};
+    --bs-gray-200: #{$bs-gray-200};
+    --bs-gray-300: #{$bs-gray-300};
+    --bs-gray-400: #{$bs-gray-400};
+    --bs-gray-500: #{$bs-gray-500};
+    --bs-gray-600: #{$bs-gray-600};
+    --bs-gray-700: #{$bs-gray-700};
+    --bs-gray-800: #{$bs-gray-800};
+
+    --bs-primary: #{$bs-primary};
+    --bs-secondary: #{$bs-secondary};
+    --bs-success: #{$bs-success};
+    --bs-info: #{$bs-info};
+    --bs-warning: #{$bs-warning};
+    --bs-danger: #{$bs-danger};
+    --bs-dark: #{$bs-dark};
+    --bs-body-color: #{$bs-body-color};
+
+    // RBG Colors
+    --bs-primary-rgb: #{red($bs-primary)}, #{green($bs-primary)}, #{blue($bs-primary)};
+    --bs-secondary-rgb: #{red($bs-secondary)}, #{green($bs-secondary)}, #{blue($bs-secondary)};
+    --bs-success-rgb: #{red($bs-success)}, #{green($bs-success)}, #{blue($bs-success)};
+    --bs-info-rgb: #{red($bs-info)}, #{green($bs-info)}, #{blue($bs-info)};
+    --bs-warning-rgb: #{red($bs-warning)}, #{green($bs-warning)}, #{blue($bs-warning)};
+    --bs-danger-rgb: #{red($bs-danger)}, #{green($bs-danger)}, #{blue($bs-danger)};
+    --bs-light-rgb: #{red($bs-light)}, #{green($bs-light)}, #{blue($bs-light)};
+    --bs-dark-rgb: #{red($bs-dark)}, #{green($bs-dark)}, #{blue($bs-dark)};
+    --bs-white-rgb: #{red($bs-white)}, #{green($bs-white)}, #{blue($bs-white)};
+    --bs-black-rgb: #{red($bs-black)}, #{green($bs-black)}, #{blue($bs-black)};
+    --bs-body-rgb: #{red($bs-body)}, #{green($bs-body)}, #{blue($bs-body)};
+
+    
+    // Fonts
+    --bs-font-sans-serif: #{$bs-font-sans-serif};
+    --bs-font-monospace: #{$bs-font-monospace};
+    --bs-gradient: #{$bs-gradient};
+    --bs-body-font-family: #{$bs-body-font-family};
+    --bs-h-font-family: #{$bs-h-font-family};
+    --bs-body-font-size: #{$bs-body-font-size};
+    --bs-body-font-weight: #{$bs-body-font-weight};
+    --bs-body-line-height: #{$bs-body-line-height};
+
+}

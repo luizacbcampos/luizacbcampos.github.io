@@ -1,0 +1,60 @@
+# -----------------------------------------------------------------------------
+# This file contains skill information.
+# -----------------------------------------------------------------------------
+
+python:
+  title: "Python"
+  icon: "devicon-python-plain"
+
+c:
+  title: "C"
+  icon: "devicon-c-plain"
+
+cpp:
+  title: "C++"
+  icon: "devicon-cplusplus-plain"
+
+r:
+  title: "R language"
+  icon: "devicon-r-original"
+
+bash:
+  title: "Bash"
+  icon: "devicon-bash-plain"
+
+html5:
+  title: "HTML5"
+  icon: "devicon-html5-plain"
+
+css3:
+  title: "CSS3"
+  icon: "devicon-css3-plain"
+
+jupyter:
+  title: "Jupyter"
+  icon: "devicon-jupyter-plain"
+
+docker:
+  title: "Docker"
+  icon: "devicon-docker-plain"
+
+markdown:
+  title: "Markdown"
+  icon: "devicon-markdown-original"
+
+photoshop:
+  title: "Adobe Photoshop"
+  icon: "devicon-photoshop-plain"
+
+gimp:
+  title: "GIMP"
+  icon: "devicon-gimp-plain"
+
+illustrator:
+  title: "Adobe Illustrator"
+  icon: "devicon-illustrator-plain"
+
+aftereffects:
+  title: "Adobe After Effects"
+  icon: "devicon-aftereffects-plain"
+

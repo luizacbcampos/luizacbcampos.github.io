@@ -1,0 +1,31 @@
+<div class="resume-section-content">
+    <h1 class="mb-0">
+        {{ site.first_name }}
+        <span class="text-primary">{{ site.last_name }}</span>
+    </h1>
+    <div class="subheading mb-5">
+        {% if site.location -%} {{ site.location | capitalize }} {% endif %}
+        <a href="mailto:{{ site.email | encode_email }}">{{site.email}}</a>
+    </div>
+    <p class="lead mb-5">{{site.about_txt}}</p>
+    <div class="social-icons mb-5">
+        {% if site.cv -%}
+        <a class="social-icon" href="{{ '/assets/pdf/' | append: site.cv }}" target="_blank">
+            <i class="ai ai-cv"></i>
+        </a>
+        {% endif %}
+        
+        {% if site.data.social %}
+            {% assign sm = site.data.social %}
+            {% for entry in sm %}
+                {% assign key = entry | first %}
+                {% assign t = sm[key].tag %}
+                {% if site.[t] %}
+                    <a class="social-icon" title="{{ sm[key].title }}" href="{{ sm[key].href }}{{ site.[t] }}" target="_blank">
+                        <i class="{{ sm[key].icon }}"></i>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>
