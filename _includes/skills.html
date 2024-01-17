@@ -1,7 +1,8 @@
 <div class="resume-section-content">
     <h2 class="mb-5">Skills</h2>
     {% for skill_category in site.skills %}
-        <div class="subheading mb-3">{{skill_category.category | capitalize }}</div>
+        {% assign category_name = skill_category.category %}
+            <div class="subheading mb-3">{{category_name | capitalize }}</div>
             <ul class="list-inline dev-icons">
                 {% for skill in skill_category.list %}
                     {% if site.data.skills contains skill %}
@@ -12,4 +13,11 @@
                 {% endfor %}
             </ul>
     {% endfor %}
+
+    <div class="subheading mb-3">Languages</div>
+    <ul>
+        {% for language in site.language_skills %}
+            <li>{{language.language}} - {{language.level}} </li>
+        {% endfor %}
+    </ul>
 </div>
