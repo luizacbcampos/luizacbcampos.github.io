@@ -121,6 +121,12 @@ education:
 # Add your work experience here
 
 experience:
+  - role: Software Engineer
+    company: Google
+    date_start: !!timestamp 2024-05-13 #August 2021
+    date_end: # leave blank if still working
+    information: 
+      text: # additional information (e.g. honours, etc.)
   - role: Research Assistant
     company: Verlab - UFMG
     date_start: !!timestamp 2021-08-01 #August 2021
